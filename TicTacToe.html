@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TicTacToe</title>
+    <link rel="stylesheet" href="./css/TicTacToe.css">
+    <link rel="stylesheet" href="./css/aos-master/dist/aos.css">
+    <link rel="stylesheet" href="./fronts/themify-icons-font/themify-icons/themify-icons.css">
+</head>
+<body>
+    <div class="page" >
+        <header>
+            <div class="logo">
+                <img src="./css/img/logo.png" alt="">
+            </div>
+            <div class="content">
+                <h1>Entertainment with Tic Tac Toe</h1>
+            </div>   
+            <div class="toggle_menu" onclick="menu()">
+                <i class="tiv-menu ti-menu"></i>
+            </div>
+            <div class="menu">
+         
+                    <ul >
+                        <li onclick="convert('UserScreen')" >Home</li>
+                        <li>Setting</li>
+                        <li></li>
+                    </ul>
+            </div>
+            <section class="content1">
+            </section>
+        </header>
+        <main>
+            <aside class="aside"></aside>
+            <section class="Main">
+                <nav id="nav">
+                    <div id="nav1">
+                        <div class="nav11">
+                            <input list="more" placeholder="More...." id="Mode">
+                            <datalist id="more">
+                            <option value="OnePeople">One People</option>    
+                            <option value="TwoPeople">Two People</option>    
+                            </datalist>
+                        </div>
+                        <div class="nav11" >
+                                <input list="level" placeholder="Level...." id="Level">
+                                <datalist id="level">
+                                <option value="Difficult">Difficult</option>    
+                                <option value="Easy">Easy</option>    
+                                </datalist>
+                        </div>
+                        <div class="nav11">
+                            <button onclick="start()" >Start</button>
+                        </div>
+
+                    </div>
+                    <div id="nav2">
+                        <h1 id="Notification"></h1>
+                    </div>
+                </nav>
+                <div id="ContetnMain2"></div>
+                
+                <div id="ContetnMain1">
+                    <div class="rows">
+                        <button id="btn0"></button>
+                        <button id="btn1"></button>
+                        <button id="btn2"></button>
+                    </div>
+                    <div class="rows">
+                        <button id="btn3"></button>
+                        <button id="btn4"></button>
+                        <button id="btn5"></button>
+                    </div>
+                    <div class="rows">
+                        <button id="btn6"></button>
+                        <button id="btn7"></button>
+                        <button id="btn8"></button>
+                    </div>
+                </div>
+            </section>
+            <section class="MainRight"></section>
+        </main>
+        <footer>
+            <div class="footer Feedback">
+                <h1>Feedback</h1>
+            </div>
+            <div class="footer media">
+                <h1>Media</h1>
+            </div>
+        </footer>
+    </div>
+</body>
+<script src="./js/TicTacToe.js"></script>
+</html>

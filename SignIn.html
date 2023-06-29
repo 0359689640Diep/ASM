@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignIn</title>
+    <link rel="stylesheet" href="./css/SignIn.css">
+    <link rel="stylesheet" href="./fronts/themify-icons-font/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="./css/aos-master/dist/aos.css">
+</head>
+<body>
+    <section class="page">
+        <header>
+            <div class="nav">
+                <div id="logo">
+                    <img 
+                    data-aos="fade-right"
+                    data-aos-duration="2500" 
+                    src="./css/img/logo.png" alt="">
+                </div>
+                <nav>
+                    <a href="#"
+                    data-aos="fade-up"
+                    data-aos-duration="2500"
+                    >Category</a>
+                    <a href="#"
+                    data-aos="fade-up"
+                    data-aos-duration="2500"
+                    >About Us</a>
+                    <a href="#"
+                    data-aos="fade-up"
+                    data-aos-duration="2500"
+                    >CourseaBusiness</a>
+                    <button
+                    data-aos="fade-left"
+                    data-aos-duration="2500"
+                    onclick="convert('home')"
+                    >Home
+                    <i class="tiv-home ti-home"></i>
+                
+                </button>
+                </nav>        
+            </div>
+            <div class="contenter-header">
+                <div id="welcome" 
+                data-aos-duration="1500" data-aos="zoom-in"
+                >
+                    <h1
+                    data-aos="zoom-in" data-aos-duration="1500"
+                    >Welcome to coureea</h1>
+                </div>
+                <div id="content-Meet">
+                    <h1
+                    data-aos="fade-down"
+                    data-aos-easing="linear"
+                     data-aos-duration="1500"
+                    >Meet The Professinal Mentor</h1>
+                </div>
+                <div id="Login_SingIn">
+                    <img src="./css/img/Untitled.png" alt=""
+                    data-aos="fade-up"
+                    data-aos-anchor-placement="center-bottom"
+                    data-aos-duration="1500"
+                    >
+                    <nav id="button"
+                    data-aos-duration="1500"
+                    data-aos="fade-up"
+                    data-aos-anchor-placement="center-bottom"
+                    >
+                        <button
+                        data-aos="fade-up"
+                        data-aos-duration="1500"
+                        >Support</button>
+                        <button
+                        data-aos="fade-up"
+                        data-aos-duration="1500"
+                        onclick="convert('LogIn')"
+                        >Login In</button>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="input">
+                <nav>
+                    <a href="#">
+                        <h1
+                        data-aos="fade-up"
+                        data-aos-anchor-placement="top-bottom"
+                        data-aos-duration="3000"
+                        >Sign In</h1>
+                    </a> 
+                </nav>
+                <div id="SignIn">
+                    <input 
+                    data-aos="fade-right"                 data-aos-duration="3000"
+                    type="text" placeholder="Name" name="check"
+                    id="name">
+                    
+                    <p
+                    data-aos="fade-right"               
+                     data-aos-duration="3000"   
+                    id="loi0"></p>
+                    <input 
+                    name="check"
+                    data-aos="fade-right"               
+                     data-aos-duration="3000"             
+                      type="date" placeholder="Age"
+                      id="age"
+                      >
+                    
+                    <p
+                    data-aos="fade-right"               
+                     data-aos-duration="3000"   
+                    id="loi1"></p>
+                    <div id="Sex"
+                    data-aos="fade-right"                
+                     data-aos-duration="3000"
+                    >
+                        <label
+                        data-aos="fade-right"           
+                          data-aos-duration="3000"
+                        >Male
+                        <input type="radio"  name="sex" id="Male" value="Male">
+                        </label>
+                        <!-- <p class="loi"></p> -->
+                        <label
+                        data-aos="fade-right" 
+                        data-aos-duration="3000" checked
+                        >Female
+                        <input
+                        data-aos="fade-right" 
+                        data-aos-duration="3000"
+                        type="radio"  name="sex" value="Female"
+                        id="Female"
+                        >
+                        </label>
+                    </div>
+                    <p
+                    data-aos="fade-right"               
+                     data-aos-duration="3000"   
+                    id="loi2"></p>
+                    <input 
+                    name="check"
+                    data-aos="fade-right"     
+                    data-aos-duration="3000"
+                    type="text" placeholder="Phone Number" id="PhoneNumber">
+                    <p
+                    data-aos="fade-right"               
+                     data-aos-duration="3000"   
+                    id="loi3"></p>
+                    <input
+                    name="check"
+                    data-aos="fade-right"     
+                    data-aos-duration="3000"
+                    type="Password" placeholder="Password" id="password">
+                    <i
+                    onclick=" ShowPassword('password','icon') "
+                    class="ti-lock" id="icon">
+                    </i>
+                    <p
+                    data-aos="fade-right"               
+                     data-aos-duration="3000"   
+                    id="loi4"></p>
+                    <input
+                    name="check"
+                    data-aos="fade-right"     
+                    data-aos-duration="3000"
+                    type="Password" placeholder="Enter the password" id="Epassword">
+                    <i
+                    onclick=" ShowPassword('Epassword','Eicon') "
+                    class="ti-lock" id="Eicon">
+                    </i>
+
+                    <p
+                    data-aos="fade-right"               
+                     data-aos-duration="3000"   
+                    id="loi5"></p>
+                    <button 
+                    data-aos="fade-down-right"
+                    data-aos-duration="3000"
+                    onclick="SingIN()"
+                    >Sign In</button>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="BecameMentor"
+            data-aos="zoom-in"                         data-aos-duration="2000"
+
+            >
+                <div class="img"
+                data-aos-duration="2500"
+                data-aos="zoom-in-up">
+                    <img src="./css/img/BecameMentor.png" alt=""
+                    >
+                </div>
+                <div class="register"
+                data-aos="zoom-in"                        data-aos-duration="2500"
+                >
+                    <h3
+                    data-aos="zoom-out"
+                    data-aos-duration="2000"
+                    >Became Mentor</h3>
+                    <i 
+                    data-aos="zoom-out"
+                    data-aos-duration="2000"
+                    class="tiv-id-badge ti-id-badge"></i>
+   
+                </div>
+            </div>
+            <div class="Information">
+                <div class="InformationContent1">
+                    <h3>Contact Info</h3>
+                    <h4>Vudiep621@</h4>
+                    <h4>0359689640</h4>     
+                </div>
+                <div class="InformationContent2">
+                    <h3>Troubleshooting</h3>
+                    <h4>Vudiep621@</h4>
+                    <h4>0359689640</h4>       
+                </div>
+                <div class="InformationContent3">
+                    <h3>Address</h3>
+                    <h4>Tu Hoàn Phương Canh Hà Nội</h4>            
+
+                </div>
+                <div class="InformationContent4">
+                    <h3>Socia Media</h3>
+                    <div class="icont">
+                        <i class="tiv-twitter-alt ti-twitter-alt"></i>
+                        <i class="tiv-yahoo ti-yahoo"></i>
+                        <i class="tiv-instagram ti-instagram"></i>
+                        <i class="tiv-facebook ti-facebook"></i>
+                    </div>
+                </div>
+            </div>
+            <div id="ThankYou">
+                <h1>Thanks for visiting</h1>
+            </div>
+        </footer>
+    </section>
+</body>
+<script src="./js/SignIn.js"></script>
+<script>
+    AOS.init();
+  </script>
+</html>

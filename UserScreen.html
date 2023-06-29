@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coursea</title>
+    <link rel="stylesheet" href="./css/UserScreen.css">
+    <link rel="stylesheet" href="./fronts/themify-icons-font/themify-icons/themify-icons.css">
+</head>
+<body>
+    <div class="page">
+        <header>
+            <section id="logo">  
+                <img src="./css/img/logo.png" alt="">
+            </section>
+            <nav id="nav">
+                <h4>SCIENCE ONLINE</h4>
+                <h4>COURSE THROUGH</h4>
+                <h4>COMMUNITY</h4>
+                <h4>FAVOURITE</h4>
+            </nav>
+            <form id="search">
+                <input type="text" class="search" placeholder="Search" id="SearchInput">
+                <button type="button" id="SearchButton">
+                    <i class="ti-search"></i>
+                </button>
+              </form>
+              
+        </header>
+        <aside>
+            <div class="ContentAside">
+                <div class="account">
+                    <div id="AccountImg">
+                        <img src="./css/img/02.png" alt="">
+                    </div>
+                    <div id="AccountName">
+                        <input type="text" id="name" value="name">
+                        <input type="text" id="phone" value="phone">
+                    </div>
+                </div>
+                <div class="function" onclick="convert('home')">
+                    <h3>Home</h3>
+                </div>
+                <div class="function">
+                    <h3>Profil</h3>
+                </div>
+                <div class="function">
+                    <h3>Settings</h3>
+                </div>
+                <div class="function">
+                    <h3>More</h3>
+                </div>
+                <div class="function" onclick="LogOut('home')">
+                    <h3>Logout</h3>
+                </div>
+            </div>
+        </aside>
+        <main>
+            <article id="ArticleMain">
+                <h1>Enrolled Courses</h1>
+                <div id="Courses1">
+                    <div class="Courses" onclick="convert('LearningScreen')">
+                        <img src="./css/img/1.jpg" alt="">
+                        <h2>Client consultant</h2>
+                    </div>
+                    <div class="Courses" onclick="convert('LearningScreen')">
+                        <img src="./css/img/2.jpg" alt="">
+                        <h2>Data Analyst</h2>
+
+                    </div>
+                    <div class="Courses" onclick="convert('LearningScreen')">
+                        <img src="./css/img/3.jpg" alt="">
+                     <h2>Education online</h2>  
+                    </div>
+                </div> 
+                <div id="Courses2">
+                    <div class="Courses" onclick="convert('LearningScreen')">
+                        <img src="./css/img/7.jpg" alt="">
+                        <h2>HTML 5 & CSS 3</h2>
+                    </div>
+                    <div class="Courses" onclick="convert('LearningScreen')">
+                        <img src="./css/img/5.jpg" alt="">
+                       <h2>Graphic design</h2>     
+                    </div>
+                    <div class="Courses" onclick="convert('LearningScreen')">
+                        <img src="./css/img/6.jpg" alt="">
+                      <h2>Content creation</h2>
+                    </div>
+                    
+                </div> 
+               
+            </article>
+            <aside id="AsideMain">
+                <div class="ContentAsideMain">
+                    <h3>Entertainment</h3>
+                    <div class="ContentAside1" onclick="convert('TicTacToe')">
+                        <img src="./css/img/tic-tac-toe-200.jpg" alt="">
+                    </img>
+                    <h4>Tic Tac Toe</h4>
+                    </div>
+                    <div class="ContentAside1">
+                        <img src="" alt="">
+                    </img>
+                    <h4>Game1</h4>
+                    </div>
+                    <div class="ContentAside1">
+                        <img src="" alt="">
+                    </img>
+                    <h4>Game1</h4>
+                    </div>
+                    <div class="ContentAside1">
+                        <img src="" alt="">
+                    </img>
+                    <h4>Game1</h4>
+                    </div>
+                </div>
+            </aside>
+        </main>
+        <footer>
+            <h3>Vudiep621@gmail.com</h3>
+            <div class="SociaMedia">
+
+                    <i class="tiv-twitter-alt ti-twitter-alt"></i>
+                    <i class="tiv-yahoo ti-yahoo"></i>
+                    <i class="tiv-instagram ti-instagram"></i>
+                    <i class="tiv-facebook ti-facebook"></i>
+            </div>
+        </footer>
+    </div>
+</body>
+<script src="./js/UserScreen.js"></script>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Signup/Login Form</title>
+</head>
+<body>
+    <h2>Signup</h2>
+    <form id="signup-form">
+        <div>
+            <label for="key0">key:</label>
+            <input type="text" id="key0" name="key0" required>
+            <label for="fullname">Full name:</label>
+            <input type="text" id="fullname" name="fullname" required>
+        </div>
+        <div>
+            <button type="submit">Signup</button>
+        </div>
+    </form>
+    <hr>
+    <h2>Login</h2>
+    <form id="login-form">
+        <div>
+            <label for="username">Key:</label>
+            <input type="text" id="key1" name="key" required>
+        </div>
+        <div>
+            <button type="submit">Login</button>
+        </div>
+        
+    </form>
+
+    <script>
+        // Lưu giá trị key vào localStorage khi submit form đăng ký
+        document.getElementById('signup-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Dừng hành vi submit mặc định của form
+            var key0 = document.getElementById('key0');
+            var key0 = key0.value;
+            var fullnameInput = document.getElementById('fullname');
+            var fullName = fullnameInput.value;
+            localStorage.setItem(key0, fullName); // Lưu tên người dùng vào localStorage
+            fullnameInput.value = ''; // Reset trường nhập liệu
+            alert('Đăng ký thành công!');
+        });
+
+        // Kiểm tra giá trị key trong localStorage khi submit form đăng nhập
+        document.getElementById('login-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Dừng hành vi submit mặc định của form
+            var keyInput = document.getElementById('key1');
+            var key1 = keyInput.value;
+            var currentUser = localStorage.getItem(key1); // Lấy giá trị tên người dùng từ localStorage'
+            console.log(currentUser);
+            if ( currentUser !== null) { // Kiểm tra xem key có tồn tại trong localStorage và giống với tên đăng nhập ở form đăng nhập hay không
+                localStorage.setItem("login", key1);
+                alert('Đăng nhập thành công!');
+                window.location.replace('http://127.0.0.1:5500/a2.html');
+            } else {
+                alert('Đăng nhập thất bại!');
+            }
+            keyInput.value = ''; // Reset trường nhập liệu
+        });
+    </script>
+</body>
+</html>

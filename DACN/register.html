@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 6 bai 3</title>
+    <style type="text/css">
+        .container{
+            width:500px;
+            height:auto;
+            margin:0 auto;
+            border:2px solid green;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .form-group{
+            margin:0px 5px;
+            clear:both;
+        }
+        label{
+            padding:5px 5px 0 0;
+            width:170px;
+            color:blue;
+            text-align:right;
+            float:left;
+            font-size:20px;
+        }
+        .form-control{
+            width:230px;
+            padding:5px 20px;
+            margin:10px 20px;
+            border:none;
+            border-radius: 4px;
+            color: red;
+            display:block;
+            
+            box-shadow:0px 0px 5px blue;
+            float:right;
+        } 
+        .form-control:focus{
+            box-shadow: 0 0 3px orangered;
+        }
+        .form-button{
+            width:100px;
+            padding:10px 10px;
+            margin: 10px;
+            border:none;
+            outline:none;
+            box-shadow:3px 3px 5px blue;
+            color:orangered;
+            font-size:17px;
+            font-weight:bold;
+            background-color:aqua;
+        }
+    </style>
+    <script type="text/javascript">
+        function hien_thi(visible){
+            var sothichkhac=document.getElementById("soThichKhac");
+            sothichkhac.style.display=visible?"":"none";
+        }
+	    function kiem_tra(){
+            var user=document.getElementById("userName");
+            var tenErr=document.getElementById("ten-err");
+            if(user.value.length==0){
+                tenErr.style.display="block";
+                document.getElementById("ten-err").innerText="Vui lòng nhập tên đăng nhập";
+                return false;
+            }
+                else{
+                    tenErr.style.display="none";
+                }
+            
+            var pass=document.getElementById("passWord");
+            if(pass.value.length==0){
+                alert("Vui lòng nhập Password");
+                return false;
+            }
+            if(pass.value.length<8){
+                alert("Vui lòng nhập Password phải từ 8 ký tự trở lên");
+                return false;
+            }
+            var confỉmPass=document.getElementById("confirm_passWord");
+            if(pass.value != confỉmPass.value){
+                alert("Xác nhận Password không đúng, nhập lại");
+                return false;
+            }
+            var diachi=document.getElementById("ACC");
+            if(diachi.value.length==0){
+                alert("Vui lòng nhập admin confirmation code");
+                return false;
+            }else{
+                diachi.value.length==="Admin123"
+            }
+
+            return true;
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h2>ĐĂNG KÝ THÀNH VIÊN</h2>
+        <form name="dangky" onsubmit="return kiem_tra()">
+            <div class="form-group">
+                <label>UserName: </label>
+                <div style=" float: right;">
+                    <input type="text" id="userName"  class="form-control"/>
+                    <div id="ten-err" style="display: none;"></div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Password: </label>
+                <input type="password" id="passWord" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label>Confirm Password: </label>
+                <input type="password" id="confirm_passWord" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label>Admin Confirmation Code: </label>
+                <input type="text" id="ACC" class="form-control" />
+            </div>
+            <hr style="clear: both; margin: 35px 10px 10px; padding: 1px;" size="2px" color="blue" />
+            <div class="form-group">
+                <button class="form-button">Đăng ký</button>
+                <button type="reset" class="form-button">Nhập lại</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: antiquewhite;
+}
+
+.form-wrapper {
+  position: fixed;
+  bottom: -300px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  transition: all .3s ease-in-out;
+}
+
+.form-wrapper.visible {
+  bottom: 0;
+}
+
+</style>
+<body>
+    <div class="container">
+        <button class="trigger">Click Me</button>
+        <div class="form-wrapper">
+          <form action="#" method="post">
+            <h2>Sign up</h2>
+            <input type="text" placeholder="Name">
+            <input type="email" placeholder="Email">
+            <input type="password" placeholder="Password">
+            <button class="submit-button">Submit</button>
+          </form>
+        </div>
+      </div>
+      
+</body>
+<script>
+    const trigger = document.querySelector('.trigger');
+const formWrapper = document.querySelector('.form-wrapper');
+
+// Thêm sự kiện click cho trigger button
+trigger.addEventListener('click', () => {
+  // Thêm class visible cho form-wrapper div
+  formWrapper.classList.add('visible');
+});
+
+// Thêm sự kiện mouseleave cho form-wrapper div
+formWrapper.addEventListener('mouseleave', () => {
+  // Xóa class visible khỏi form-wrapper div
+  formWrapper.classList.remove('visible');
+});
+
+</script>
+</html>

@@ -1,0 +1,298 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 'Poppins',sans-serif;
+    width:100%;
+    height:100%;    
+}
+:root{
+    --background-color1:#AEF2EB;
+    --background-color2:#C9FA00;
+    --background-color3:#ffff;
+    --background-color4:#000000 ;
+    --color-text1: #ffff;
+    --color-text2:black;
+    --color-text3:#999999;
+    --color-text4:#00CCFF;
+}
+.page{
+    width:1470px;
+    height:auto;
+    background-color: var(--background-color4);
+    margin: 0 auto;
+    display:grid;
+    grid-template-columns: 20% 40%;
+    grid-template-rows:15% 70% 15%;
+    grid-template-areas:"header header header" "main main main" "footer footer footer";
+    margin:0 auto;
+}
+.page>header{
+    grid-area:header;
+    width:100%;
+    height:100%;
+    background-color: var(--background-color4);
+    display:flex;
+    justify-content: space-around;
+    /* border:2px solid var(--color-text4); */
+
+}
+.page>header> .logo{
+    width:15%;
+    height:25%;
+    border:2px solid white;
+    margin-top:5%;
+    
+}
+.logo>img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+
+}
+
+.content{
+    width:35%;
+    height:25%;
+    margin:5% 0% 0% 0%;
+    
+}
+.content>h1{
+    width:100%;
+    height:100%;
+    color:var(--color-text4);
+    font-size:30px;
+}
+.menu{
+    width:15%;
+    height:30%; 
+    position:relative;
+    text-align: center;
+    /* bám dính */
+    position:fixed;
+    background-color: var(--background-color3);
+    /* display:flex; */
+    align-items: center;
+    /* che lấp các phần tử bên dưới  */
+    z-index:1000;
+    margin-left:85%;
+    border-radius: 30px;
+    display: none;
+}
+.hide{
+    width:0px; 
+}
+
+.menu ul li{
+    width:100%;
+    color:var(--color-text2);
+    font-size:1.2em;
+    display:inline-block;
+    align-items: center;
+    padding:15px;
+    /* chuyển động mượt mà trong 1.5s linear:Giữ nguyên tốc độ di chuyển  */
+    transition:linear 1.5s;
+}
+.menu ul{
+    width:100%;
+    list-style:none ;
+    /* ẩn đi nội dung khi phần nội dung đó vượt quá sự cho phép mà không hiển thị bất kì thanh cuộn nào  */
+    overflow:hidden;
+}
+.menu ul li:hover{
+    background-color: var(--background-color4);
+    color:var(--color-text4);
+    border-radius: 40px;
+}
+.content1{
+    width:calc(100%-550px);
+    min-height: 100vh;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    padding:20px;
+    transition:ease-in-out 0.5s;
+}
+.toggle_menu{
+
+ margin-top:5%;
+    right:0px;
+    height:55px;
+    width:45px;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    color: var(--color-text4);
+    transition:linear 0.2s;
+    border-radius: 10px 10px 10px 10px;
+    /* thay đổi hình ảnh con trỏ chuột khi nó đưa vào icon  */
+    cursor: pointer;
+    
+}
+.tiv-menu{
+    font-size: 40px;
+    color:var(--color-text4);
+}
+.tiv-menu:hover{
+    transform: 1.5s;
+    color:var(--color-text4);
+}
+.toggle_menu:hover{
+    color:var(--color-text2);
+    font-size:1.5em;
+    transition:linear 0.2s;
+}
+.page>main{
+    grid-area:main;
+    width:100%;
+    height:100%;
+    display:grid;
+    grid-template-columns: 15% 70% 15%;
+    grid-template-rows:15% 70% 15%;
+    grid-template-areas:"aside Main MainRight" "aside Main MainRight" "aside Main MainRight";
+}
+.aside{
+    width:100%;
+    height:100%;
+    background-color: var(--background-color4);
+    grid-area: aside;
+}
+.Main{
+    width:100%;
+    height:100%;
+    /* background-color: var(--background-color4); */
+    grid-area: Main;
+}
+#nav{
+    width:100%;
+    height:30%;
+}
+#nav1{
+    margin:0% 0% 5% 15%;
+    display:flex;
+    width:70%;
+    height:30%;
+    /* padding:0%; */
+    justify-content: center;
+}
+.nav11{
+    width:30%;
+    height:50%;
+    margin:3%;
+}
+.nav11>input{
+    width:100%;
+    height:100%;
+    background-color:var(--background-color4);
+    color:var(--color-text4);
+    font-size:14px;
+    border:2px solid var(--color-text4);
+    padding:5%;
+    display: block;
+
+}
+input::placeholder{
+   color:var(--color-text4);
+   font-size:20px;
+}
+.nav11>button{
+    width:100%;
+    height:100%;
+    background-color: var(--color-text2);
+    color:var(--color-text4);
+    border:2px solid var(--color-text4);
+    font-size:20px;
+}
+.nav11>input:hover{
+    border:2px solid;
+    color:var(--color-text2);
+    transition:linear 1.5s;
+    border-radius: 15px;
+    border:2px solid var(--color-text4);
+
+}
+.nav11>button:hover{
+    background-color: var(--color-text4);
+    border:2px solid;
+    color:var(--color-text2);
+    transition:linear 1.5s;
+    border-radius: 15px;
+}
+#nav2{
+    margin:0% 0% 5% 15%;
+    display:flex;
+    width:70%;
+    height:30%;
+    justify-content: center;
+    color:white
+}
+#nav2>h1{
+    font-size: 50px;
+}
+#ContetnMain2{
+    width:100%;
+    height:65%;
+    margin-top:-5%;
+    display:none;
+    border:2px solid white; 
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.square{
+    width:20%;
+    height:20%;
+    margin:3%;
+    font-size:60px;
+    border:2px solid white; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor:pointer;
+    color:aliceblue;
+}
+#ContetnMain1{
+    border:2px solid white; 
+    width:100%;
+    height:65%;
+    margin-top:-5%;
+    display:none;
+}
+#ContetnMain1> .rows{
+    width: 100%;
+    height:30%; 
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+.rows>button{
+    width:15%;
+    height:80%;
+    margin:5%;
+    font-size:60px;
+
+}
+.MainRight{
+    width:100%;
+    height:100%;
+    background-color: var(--background-color4);
+    grid-area: MainRight;
+}
+.page>footer{
+    grid-area:footer;
+    width:100%;
+    height:100%;
+    background-color: var(--background-color4);
+    border:2px solid var(--color-text4);
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+.footer{
+    width:15%;
+    height:15%;
+    margin-top:5%;
+    color:var(--color-text4);
+}

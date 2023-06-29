@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Content</title>
+    <link rel="stylesheet" href="./fronts/themify-icons-font/themify-icons/themify-icons.css">
+</head>
+<link rel="stylesheet" href="./css/homework.css">
+<body>
+    <div class="page">
+    <header>
+        <div id="logo">
+            <img src="./css/img/logo.png" alt="">
+        </div>
+        <nav id="nav">
+            <h4 onclick="convert('UserScreen')" >Home</h4>
+            <h4>Support</h4>
+            <h4>Setting</h4>
+            <h4 onclick=" ToExamine()">Submit</h4>
+            <h4 onclick=" refresh()">Refresh</h4>
+        </nav>
+    </header>
+    <aside>
+
+        <section id="SlideBarIcon">
+            <i class="tiv-menu ti-menu" onclick="menu()"></i>
+        </section>
+        <section id="SlideBar">
+            <div id="Frofile">
+                <nav id="NavFrofile" onclick="menu1()">
+                    <i class="ContentNavFrofile ti-arrow-left"></i>
+                    <h3 class="ContentNavFrofile" >Frofile</h3>
+                </nav>
+                <div id="BasicUserInformation">
+                    <img src="./css/img/02.png" alt="">
+                    <h3>Name:Vu Diep</h3>
+                    <h4>Id:MN12345</h4>
+                </div>
+            </div>
+            <ul id="Userdetails">
+                <li>
+                    <h4>Number of lessons:</h4>
+                    <h5>3</h5>
+                </li>
+                <li>
+                    <h4>Date or birth:</h4>
+                    <h5>12 Oct 2004</h5>
+                </li>
+                <li>
+                    <h4>Blood group:</h4>
+                    <h5>A</h5>
+                </li>
+                <li>
+                    <h4>Emergency Contact:</h4>
+                    <h5>035968640</h5>
+                </li>
+                <li>
+                    <h4>Class position:</h4>
+                    <h5>Student</h5>
+                </li>
+                <li>
+                    <h4>Father’s  name:</h4>
+                    <h5>Mr.Van Cong</h5>
+                </li>
+                <li>
+                    <h4>Mother’s name:</h4>
+                    <h5>Mrs.Hoang Thuy</h5>
+                </li>
+            </ul>
+            <div id="AskforUpdate">
+                <button>Ask for Update</button>
+            </div>
+        </section>
+        <section id="AA1"></section>
+    </aside>
+      <main>
+        <section class="title">
+            <h2>Exam Code:121</h2>
+            <h1 id="result" style="color:#FD3667"></h1>
+
+            <div class="time">
+                <i class="tiv-timer ti-timer"></i>
+                <h2>30:Min</h2>                
+            </div>
+
+        </section>
+        <section class="questions">
+            <div class="RowsQuestion1">
+                <div class="question1">
+                    <h2>Question1</h2>
+                    <h3 id="QuestionTitle">HTML stand for</h3>
+                    <div class="answer">
+                        <label for="qs0">
+                            <input type="radio" name="qs0" id="qs0" value="false">
+                            : Hypermark Language
+                        </label>
+                        <label for="qs1">
+                            <input type="radio" name="qs0" id="qs1" value="false">
+                            :Hypermix language
+                        </label>
+                        <label for="qs2">
+                            <input type="radio" name="qs0" id="qs2" value="true">
+                            :Hypertext Markup Language
+                        </label>
+                        <label for="qs3">
+                            <input type="radio" name="qs0" id="qs3" value="false">
+                            :Hypertension Language
+                        </label>
+                    </div>
+                </div>
+                <div class="question1">
+                    <h2>Question 2</h2>
+                    <h3 id="QuestionTitle">Which tag is used to create a check box</h3>
+                    <div class="answer">
+                        <label for="qs4">
+                            <input type="radio" name="qs1"
+                            id="qs4" value="true">
+                            :&lt;checkbox&gt;
+
+                        </label>
+                        <label for="qs5">
+                            <input type="radio" name="qs1"
+                            id="qs5" value="false">
+                            :&lt;input type="checkbox"&gt;
+
+                        </label>
+                        <label for="qs6">
+                            <input type="radio" name="qs1"
+                            id="qs6" value="false">
+                            :&lt;type="checkbox"&gt;
+                           
+
+                        </label>
+                        <label for="qs7">
+                            <input type="radio" name="qs1"
+                            id="qs7" value="false">
+                            :None of the above
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="RowsQuestion2">
+                <div class="question1">
+                    <h2>Question 3</h2>
+                    <h3 id="QuestionTitle">From which tag descriptive list starts?</h3>
+                    <div class="answer">
+                        <label for="qs8">
+                            <input type="radio" name="qs2" id="qs8" value="false ">
+                            :&lt;LL &gt;
+                        </label>
+                        <label for="qs9">
+                            <input type="radio" name="qs2" id="qs9" value=" true">
+                            :&lt; DL&gt;
+                        </label>
+                        <label for="qs10">
+                            <input type="radio" name="qs2" id="qs10" value="false ">
+                            :&lt;LDL &gt;
+                        </label>
+                        <label for="11">
+                            <input type="radio" name="qs2" id="qs11" value="true">
+                            :&lt;DD &gt;
+                        </label>
+                    </div>
+                </div>
+                <div class="question1">
+                    <h2>Question 4</h2>
+                    <h3 id="QuestionTitle">HTML is subset of which of the following</h3>
+                    <div class="answer">
+                        <label for="qs12">
+                            <input type="radio" name="qs3"
+                            id="qs12" value=" false">
+                            : GHL
+                        </label>
+                        <label for="qs13">
+                            <input type="radio" name="qs3"
+                            id="qs13" value="false">
+                            :SHL
+                        </label>
+                        <label for="qs14">
+                            <input type="radio" name="qs3"
+                            id="qs14" value="false">
+                            :SGHL
+                        </label>
+                        <label for="qs15">
+                            <input type="radio" name="qs3"
+                            id="qs15" value="true">
+                            :SGML
+                        </label>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+        <section class="pages">
+            <div class="page1">
+                <p>1</p>
+            </div>
+            <div class="page1">
+                <p>2</p>
+            </div>
+            <div class="page1">
+                <p>3</p>
+            </div>
+            <div class="page1">
+                <p>4</p>
+            </div>
+            <div class="page1">
+                <p>5</p>
+            </div>
+        </section>
+      </main>
+    <footer>
+        <h3>Vudiep621@gmail.com</h3>
+        <div class="SociaMedia">
+
+                <i class="tiv-twitter-alt ti-twitter-alt"></i>
+                <i class="tiv-yahoo ti-yahoo"></i>
+                <i class="tiv-instagram ti-instagram"></i>
+                <i class="tiv-facebook ti-facebook"></i>
+        </div>
+    </footer>
+</div>
+</body>
+<script src="./js/homework.js"></script>
+</html>
