@@ -1,20 +1,20 @@
 
 function convert(type){
     if(type==="home"){
-        window.location.replace('http://127.0.0.1:5500/HTML5Css3/ASM/index.html');
+        window.location.replace('../index.html');
     }
     else if(type==="SignIn"){
-        window.location.replace('http://127.0.0.1:5500/HTML5Css3/ASM/SignIn.html')
+        window.location.replace('../SignIn.html')
     }
     else if(type==="LogIn"){
         var a=confirm("You need to login to use the service");
         if(a === true){
             
-            window.location.replace("http://127.0.0.1:5500/HTML5Css3/ASM/Login.html");
+            window.location.replace("../Login.html");
         }
     }
     else if(type="Im"){
-        window.location.replace("http://127.0.0.1:5500/HTML5Css3/ASM/DACN/index.html")
+        window.location.replace("../DACN/index.html")
     }
     else{
         alert("Eroor...khong co type nao ban muon")

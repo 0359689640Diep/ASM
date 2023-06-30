@@ -1,7 +1,7 @@
 
 function convert(type){
     if(type === "home"){
-        window.location.replace('http://127.0.0.1:5500/HTML5Css3/ASM/index.html');
+        window.location.replace('../index.html');
 
     }else if(type === "LearningScreen" ){
 // var randomNumber = Math.floor(Math.random()*100)+1;
@@ -15,10 +15,10 @@ function convert(type){
 // Object.assign(LogIn, {ticket: randomString+randomNumber});
 // // Lưu object cập nhật vào localStorage 
 // localStorage.setItem(PhoneNumber, JSON.stringify(LogIn)); 
-        window.location.replace('http://127.0.0.1:5500/HTML5Css3/ASM/LearningScreen.html');
+        window.location.replace('../LearningScreen.html');
 
     }else if(type =="TicTacToe"){
-        window.location.replace('http://127.0.0.1:5500/HTML5Css3/ASM/TicTacToe.html');
+        window.location.replace('../TicTacToe.html');
 
     }
     else{

@@ -1,10 +1,10 @@
 
 function menu(){
-    const menu=document.querySelector(' .menu');
+    const menu = document.querySelector(' .menu');
     menu.style.display = 'flex';
-const nav= document.querySelector(' .menu');
-const toggle_menu=document.querySelector(' .toggle_menu');
-const content1=document.querySelector(' .content1');
+const nav = document.querySelector(' .menu');
+const toggle_menu = document.querySelector(' .toggle_menu');
+const content1 = document.querySelector(' .content1');
 toggle_menu.onclick=function(){
     // thiết lập trạng thái ẩn cho toggle_menu
     nav.classList.toggle('hide');
@@ -14,11 +14,11 @@ toggle_menu.onclick=function(){
 
 }
 function start(){
-    var Mode=document.getElementById('Mode').value;
-    var Level=document.getElementById('Level').value;
-    var error= document.getElementById('Notification');
-    var ContetnMain2= document.getElementById('ContetnMain2');
-    var ContetnMain1= document.getElementById('ContetnMain1');
+    var Mode = document.getElementById('Mode').value;
+    var Level = document.getElementById('Level').value;
+    var error = document.getElementById('Notification');
+    var ContetnMain2 = document.getElementById('ContetnMain2');
+    var ContetnMain1 = document.getElementById('ContetnMain1');
     error.style.color='red';
     
     if(Mode === ''){
@@ -301,21 +301,21 @@ function start(){
 }
 function convert(type){
     if(type==="home"){
-        window.location.replace('http://127.0.0.1:5500/HTML5Css3/ASM/index.html');
+        window.location.replace('../index.html');
     }
     else if(type==="SignIn"){
-        window.location.replace('http://127.0.0.1:5500/HTML5Css3/ASM/SignIn.html')
+        window.location.replace('../SignIn.html')
     }
     else if(type==="LogIn"){
         alert("You need to login to use the service");
-        window.location.replace("http://127.0.0.1:5500/HTML5Css3/ASM/Login.html");
+        window.location.replace("../Login.html");
     }
     else if(type==="Im"){
-        window.location.replace("http://127.0.0.1:5500/HTML5Css3/ASM/DACN/index.html")
+        window.location.replace("../DACN/index.html")
     }else if(type === "LearningScreen" ){
-        window.location.replace('http://127.0.0.1:5500/HTML5Css3/ASM/LearningScreen.html');
+        window.location.replace('../LearningScreen.html');
     }else if(type =="UserScreen"){
-        window.location.replace('http://127.0.0.1:5500/HTML5Css3/ASM/UserScreen.html');
+        window.location.replace('../UserScreen.html');
 
     }
     else{

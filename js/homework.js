@@ -1,9 +1,9 @@
 function menu(){
     const menu = document.querySelector(' #SlideBar');
-    const icon= document.querySelector(' .tiv-menu');
-    menu.style.display='block';
-    icon.style.display='none';
-    const SlideBarIcon=document.querySelector(' #SlideBarIcon');
+    const icon = document.querySelector(' .tiv-menu');
+    menu.style.display = 'block';
+    icon.style.display = 'none';
+    const SlideBarIcon = document.querySelector(' #SlideBarIcon');
     const AA1=document.querySelector(' #AA1');
     SlideBarIcon.onclick=function(){
         menu .classList.toggle('hide');
@@ -12,26 +12,26 @@ function menu(){
 }
 function menu1(){
     const menu = document.querySelector(' #SlideBar');
-    const icon= document.querySelector(' .tiv-menu');
+    const icon = document.querySelector(' .tiv-menu');
    menu.style.display='none';
     icon.style.display='block';
 } 
 function convert(type){
     if(type === "home"){
-        window.location.replace('http://127.0.0.1:5500/HTML5Css3/ASM/index.html');
+        window.location.replace('../index.html');
     }
     else if(type === "SignIn"){
-        window.location.replace('http://127.0.0.1:5500/HTML5Css3/ASM/SignIn.html')
+        window.location.replace('../SignIn.html')
     }
     else if(type === "LogIn"){
         alert("You need to login to use the service");
-        window.location.replace("http://127.0.0.1:5500/HTML5Css3/ASM/Login.html");
+        window.location.replace("../Login.html");
     }
     else if(type === "Im"){
-        window.location.replace("http://127.0.0.1:5500/HTML5Css3/ASM/DACN/index.html")
+        window.location.replace("../DACN/index.html")
     }
     else if(type =="UserScreen"){
-        window.location.replace('http://127.0.0.1:5500/HTML5Css3/ASM/UserScreen.html');
+        window.location.replace('../UserScreen.html');
 
     }
     else{
