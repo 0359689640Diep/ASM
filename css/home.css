@@ -30,6 +30,8 @@ body{
     background-color: var(--background-color1);
     margin: 0 auto;
     position: relative;
+    /* triển khai mô hình 3d */
+    /* transform-style:preserve-3d ; */
 }
 .landing-page>header{
     width: 90%;
@@ -102,35 +104,106 @@ body{
 }
 .landing-page>header .content{
     width: 100%;
-    height:80%;
-    background-color:var(--background-color3);;
-    display: flex;
-    /* justify-content: center; */
+    height:55%;
+    background-color:var(--background-color3);
+    position:relative;
 }
-.content_left{
-    width: 50%;
-    height: 100%;
-    padding:0 5%;
+.landing-page>header .content>h2{
+    margin:2% 0% 2% 40% ;
+    padding:10px;
+    text-align: center;
+    width:30%;
+    border-radius: 30px;
+    height:55px;
+    border:2px solid;
+    padding:1%;
+}
+.landing-page>header .content>h1{
+    font-size: 100px;
+    /* margin-left:5%; */
+    text-align: center;
+}
 
-}
-.content_left>button{
-    padding:15px 50px;
-    margin: 30% 0 2% 1%;
-    background-color: var(--background-color3);
-    font-size: 16px;
-    border-radius:10px;
-}
-.content_left>h1{
-    font-size: 50px;
-}
-.content_right{
-    width: 50%;
-    height: 100%;
-
-}
-.content_right>img{
+.landing-page .footer{
     width: 100%;
+    height:55%;
+    background-color:var(--background-color3);
+    display: flex;
+
+}
+.landing-page .footer>.headerfooterLeft{
+    width:15%;
+    height:60%;
+    margin-top: 5%;
+}
+.landing-page .footer>.headerfooterLeft>h4{
+    font-size: 100%;
+    text-align: center;
+}
+.landing-page .footer>.headerfooterLeft>h1{
+    font-size: 300%;
+    margin-top: 15%;
+    margin-bottom: 5%;
+   text-align: center;
+}
+.landing-page .footer>.headerfooterCennter{
+    width:70%;
+    height:40%;
     height: 100%;
+    position: relative;
+}
+.landing-page .footer>.headerfooterCennter>img{
+    width:100%;
+    height:100%;
+}
+.NavfooterCennter{
+    position: absolute;
+    width: 50%;
+    height:20%;
+    top:50%;
+    left:25%;
+    border-radius: 50px;
+    background-color: var(--background-color3);
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    padding-top:2%;
+}
+.NavfooterCennter>button{
+    width:40%;
+    height:80%;
+    font-size: large;
+    border-radius: 50px;
+    margin-left: 3%;
+    background-color: var(--background-color3);
+}
+
+.landing-page .footer> .headerfooterCennter> .NavfooterCennter>button:hover{
+    background-color: var(--background-color2);
+    opacity:0.8;
+    transform:scale(1.2);
+    color:var(--color-text1);
+    font-size:150%;
+    border:2px solid var(--color-text1);
+}
+.landing-page .footer>.headerfooterRight{
+    width:15%;
+    height:50%;
+    margin-top: 7%;
+}
+.landing-page .footer>.headerfooterRight>h4{
+    font-size: 100%;
+    text-align: center;
+}
+.landing-page .footer>.headerfooterRight>h1{
+    font-size: 300%;
+    margin-top: 15%;
+    margin-bottom: 5%;
+   text-align: center;
+}
+.tiv-star{
+    background-color: var(--background-color2);
+    margin-left: 5%;
 }
 .landing-page>main{
     width: 90%;
@@ -306,21 +379,9 @@ body{
 #content0-main31>h1{
     width:100%;
     height:100%;
-    margin:0% 0% 1% 0%;
+    margin:0% 0% 10% 0%;
     font-size: 65px;
 }
-.content_main4>h5{
-    width:80%;
-    height:10%;
-    margin:3% 0% 2% 7%;
-}
-.content_main4>h1{
-    width:100%;
-    height:100%;
-    margin:3% 0% 1% 2%;
-    font-size: 35px;
-}
-
 .price{
     display: flex;
     width: 80%;
@@ -462,7 +523,6 @@ body{
     border:2px solid var(--color-text3);
     border-radius: 25px;
     /* margin-left: 2%; */
-    font-size: 15px;
 
 }
 #content1-main4>img:hover{
@@ -491,8 +551,6 @@ body{
     border:2px solid var(--color-text3);
     border-radius: 25px;
     margin-left: 2%;
-    font-size: 13px;
-
 
 }
 #content2-main4>img:hover{
@@ -521,8 +579,6 @@ body{
     border:2px solid var(--color-text3);
     border-radius: 25px;
     margin-left: 2%;
-    font-size: 15px;
-
 
 }
 #content3-main4>img:hover{
@@ -535,7 +591,6 @@ body{
     border:2px solid var(--color-text3);
     border-radius:25px;
         margin:3% 5% 5% 5%;
-    font-size: 15px;
 
 }
 #content3-main4>h2, .tiv-star1{

@@ -1,7 +1,7 @@
 
 function convert(type){
     if(type==="home"){
-        window.location.replace('../index.html');
+        window.location.replace('../home.html');
     }
     else if(type==="SignIn"){
         window.location.replace('../SignIn.html')
